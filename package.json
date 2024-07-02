@@ -9,5 +9,8 @@
     "start": "npm run start-frontend"
   },
   "author": "Erik Persson",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
