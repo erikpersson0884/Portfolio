@@ -1,0 +1,38 @@
+
+
+header {
+    background: #00000041;
+    /* background: #242424;
+    border-bottom: .2rem solid #c9c9c9; */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: -8rem;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 2rem;
+
+    transition: all 0.5s ease-out;
+}
+
+header .websiteLogo, header ul img     {
+    height: 5rem;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+header ul img {
+    filter: invert(1);
+}

@@ -1,0 +1,13 @@
+{
+  "name": "erik-persson-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio for Erik Persson",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix ./frontend run dev\"",
+    "start-frontend": "npm --prefix ./frontend start",
+    "start": "npm run start-frontend"
+  },
+  "author": "Erik Persson",
+  "license": "ISC"
+}

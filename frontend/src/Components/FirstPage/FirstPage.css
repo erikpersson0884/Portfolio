@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+.firstPage {
+    overflow: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    height: 100vh;
+}
+
+.firstPage>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-start;
+
+    height: 60%;
+}
+
+.firstPage h1, .firstPage h2 {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.firstPage .name {
+    color: rgb(15, 203, 15);
+}
+
+.firstPage img {
+    width: 50%;
+}
+
+.firstPage .projects {
+    margin-top: 150%;
+}
+
+.firstPage .projectsLine {
+    background: #fff;
+}
+
+.firstPage .navList  li {
+    font-size: 1.8rem;
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .6rem;
+}
+
+.navList a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navList li {
+    transition: all .2s ease-in-out; 
+}
+.navList li:hover {
+    /* border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff; */
+
+    transform: scale(1.2);
+
+    transition: all .2s ease-in-out; 
+
+}

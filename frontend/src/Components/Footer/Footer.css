@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+
+
+footer {
+    background: #454545;
+
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 10rem;
+    width: 100%;
+}
+
+/* footer .footerLogos {
+    display: flex;
+    flex-direction: column;
+    flex-direction: space-between;
+
+    width: max-content;
+}
+
+footer .footerLogos {
+    width: min-content;
+    height: min-content;
+} */
+
+
+footer a {
+    color: #d8dad8;
+    
+    font-family: Kavivanar;
+    font-size: 3rem;
+}
+
+.footerLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+footer {
+    flex-direction: column;
+}

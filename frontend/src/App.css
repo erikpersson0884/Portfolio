@@ -1,0 +1,66 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+:root {
+    --contrastColor: #1b4121;
+}
+
+* {
+    height: max-content;
+    
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-size: 18px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.noUlFormatting {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.noButtonFormatting {
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+line {
+    background: #000;
+
+    display: block;
+
+    width: 100%;
+    height: .1rem;
+    margin-inline: auto;
+}
