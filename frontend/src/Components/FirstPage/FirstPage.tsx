@@ -10,33 +10,37 @@ const FirstPage = ({className}: {className: string}) => {
 
     return (
         <div className={className + " firstPage"}>
-            <div className='headerTextContainer'>
-                <h1>Welcome, <span className='name'>Erik Persson</span><br></br> Web developer</h1>
-                <img src="images/erikpersson.jpg" alt="Erik Persson" />
-            </div>
 
-            <div className='headerProjectsContainer'>
+            {/* <div className="firstPageContainer"> */}
 
-                <nav className='projects'>
-                    <h2>Projects</h2>
-                    {/* <line  className='projectsLine'></line> */}
-                    <ul className='noUlFormatting navList'>
-                        {data.projects.map((project, index) => {
-                            return (
-                                <li key={index}>
-                                    {
-                                        project.icon && 
-                                        <span className="material-symbols-outlined">
-                                        {project.icon}
-                                        </span>
-                                    }
-                                    <a href={project.name}>{project.name}</a>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </nav> 
-                
+                <div className='headerTextContainer'>
+                    <h1>Welcome, <span className='name'>Erik Persson</span><br></br> Web developer</h1>
+                    <img src="images/erikpersson.jpg" alt="Erik Persson" />
+                </div>
+
+                <div className='headerProjectsContainer'>
+                    <nav className='projects'>
+                        <h2>Projects</h2>
+                        {/* <line  className='projectsLine'></line> */}
+                        <ul className='noUlFormatting navList'>
+                            {data.projects.map((project, index) => {
+                                return (
+                                    <li key={index}>
+                                        {
+                                            project.icon && 
+                                            <span className="material-symbols-outlined">
+                                            {project.icon}
+                                            </span>
+                                        }
+                                        <a href={project.name}>{project.name}</a>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </nav> 
+                    
+                {/* </div> */}
+
             </div>
         </div>
     );

@@ -9,18 +9,48 @@
     justify-content: space-between;
     align-items: center;
 
+    box-sizing: border-box;
     width: 80%;
     height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .firstPage>div {
+    background-size: 17rem;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
     align-items: flex-start;
 
-    height: 60%;
+    box-sizing: border-box;
+    height: 100%;
+    width: max-content;
 }
+
+
+.headerTextContainer {
+    background-image: url("images/upper-frame.svg");
+    background-position: top left;
+
+    justify-content: space-between;
+
+    padding: 6rem;
+}
+
+.headerProjectsContainer {
+    background-image: url("images/lower-frame.svg");
+    background-position: bottom right;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 6rem;
+    padding-top: 10rem;
+}
+
+
 
 .firstPage h1, .firstPage h2 {
     font-family: "Jockey One", sans-serif;
@@ -33,11 +63,7 @@
 }
 
 .firstPage img {
-    width: 50%;
-}
-
-.firstPage .projects {
-    margin-top: 150%;
+    width: 25rem;
 }
 
 .firstPage .projectsLine {
