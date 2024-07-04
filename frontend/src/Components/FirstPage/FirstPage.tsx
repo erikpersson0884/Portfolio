@@ -14,7 +14,12 @@ const FirstPage = ({className}: {className: string}) => {
             {/* <div className="firstPageContainer"> */}
 
                 <div className='headerTextContainer'>
-                    <h1>Welcome, <span className='name'>Erik Persson</span><br></br> Web developer</h1>
+                    <h1>
+                        Welcome, my name is <span className='name'>Erik Persson</span>
+                        <br />
+                        and I am a <span className='name'>Web developer</span>
+                    </h1>
+                    
                     <img src="images/erikpersson.jpg" alt="Erik Persson" />
                 </div>
 

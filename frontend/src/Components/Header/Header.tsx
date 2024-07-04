@@ -6,10 +6,15 @@ const Header: React.FC = () => {
     useEffect(() => { // hide header on first page
         const handleScroll = () => {
             const header = document.getElementById('sticky-header') as HTMLElement;
-            if (window.scrollY >= window.innerHeight) {
+            const headerHeight = header.offsetHeight;
+
+            // const heightToShowHeader = window.innerHeight;
+            const heightToShowHeader = 100;
+
+            if (window.scrollY >= heightToShowHeader) {
                 header.style.top = '0'; // Show the header
             } else {
-                header.style.top = `-${header.offsetHeight}px`; // Hide the header
+                header.style.top = `-${headerHeight}px`; // Hide the header
             }
         };
 

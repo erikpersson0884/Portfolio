@@ -11,7 +11,7 @@
 }
 
 .projectContainer .project {
-    background: #5E5E5E;
+    background: #0a0a0ac4;
 
     font-family: "Actor", sans-serif;
     font-weight: 400;
@@ -24,9 +24,10 @@
 
     box-sizing: border-box;
     width: 70%;
-    height: 80%;
+    /* height: 70vh; */
     border-radius: .6rem;
     padding: 2rem;
+    padding-bottom: 5rem;
 }
 
 .projectContainer .project>div {

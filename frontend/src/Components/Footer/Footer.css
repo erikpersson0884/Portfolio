@@ -6,42 +6,32 @@ footer {
 
     display: flex;
     flex-direction: row ;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
+    box-sizing: border-box;
+    padding-inline: 4rem;
     height: 10rem;
     width: 100%;
 }
-
-/* footer .footerLogos {
-    display: flex;
-    flex-direction: column;
-    flex-direction: space-between;
-
-    width: max-content;
-}
-
-footer .footerLogos {
-    width: min-content;
-    height: min-content;
-} */
 
 
 footer a {
     color: #d8dad8;
     
     font-family: Kavivanar;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .footerLogos {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 2rem;
 
-    width: 100%;
+    width: max-content;
 }
 
-footer {
-    flex-direction: column;
+.footerLogos img {
+    width: 3rem;
 }

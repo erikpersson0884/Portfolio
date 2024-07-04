@@ -21,6 +21,8 @@ body {
     
     display: flex;
     flex-direction: column;
+    background: url("images/snow.jpg") no-repeat center center fixed;
+    /* background-size: ; */
 }
 
 h1 {

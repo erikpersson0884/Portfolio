@@ -1,9 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
-.firstPage {
-    overflow: auto;
-
+.firstPage {    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,6 +15,8 @@
 }
 
 .firstPage>div {
+    background-color: #3b3b3bcc;
+
     background-size: 17rem;
     background-repeat: no-repeat;
 
@@ -27,6 +27,7 @@
     box-sizing: border-box;
     height: 100%;
     width: max-content;
+    flex-grow: 1;
 }
 
 
