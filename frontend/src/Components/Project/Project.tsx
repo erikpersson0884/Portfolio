@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 import "./Project.css";
 
 
@@ -17,7 +19,9 @@ const Project = ({className, name, description, githubLink, websiteLink, images}
         <div className={className + " projectContainer"}>
             <div className="project">
                 <div>
-                    <h1>{name}</h1>
+                    <Link to={"/" + name.toLowerCase()}>
+                        <h1>{name}</h1>
+                    </Link>
                     <p>{description}</p>
 
                     <nav>

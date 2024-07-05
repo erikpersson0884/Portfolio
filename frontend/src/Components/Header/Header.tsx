@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import './Header.css';
+
 import info from '../../info.json';
+
+
 
 const Header: React.FC = () => {
     useEffect(() => { // hide header on first page
@@ -26,7 +31,10 @@ const Header: React.FC = () => {
 
     return (
         <header id="sticky-header">
-            <img className="websiteLogo" src="images/erikpersson-logo.png" alt="Erik Persson Logo" />
+            <Link to="/">
+                <img className="websiteLogo" src="images/erikpersson-logo.png" alt="Erik Persson Logo" />
+            </Link>
+
             <nav>
                 <ul className='noUlFormatting'>
                     {info.socials.map((social, index) => (
