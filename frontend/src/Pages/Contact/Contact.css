@@ -1,0 +1,51 @@
+.contactPageContainer {
+    width: 100%;
+}
+
+.contactPage {
+    background: #353535ec;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    width: max-content;
+    padding: 1rem 10rem 2rem 3rem;
+
+    margin-top:35vh;
+    margin-left: 10vw;
+    /* margin-left: 15vw; */
+}
+
+.contactPage line {
+    background: #fff;
+}
+
+.contactInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    font-size: 1.5rem;
+}
+
+.contactInformation>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+} 
+
+.contactInformation img {
+    height: 1.5rem;
+}
+
+
+
+.contactHeader {
+    top: 0;
+}
+
+.contactHeader img {
+    height: 3rem;
+}

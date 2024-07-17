@@ -1,42 +1,44 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
+import { Project as ProjectInterface} from "../../types";
 import "./Project.css";
 
 
 interface ProjectProps {
+    project: ProjectInterface;
     className: string;
-    name: string;
-    description: string;
-    githubLink: string;
-    websiteLink: string;
-    images: string[];
-    icon: string;
+    id: string;
 }
 
-const Project = ({className, name, description, githubLink, websiteLink, images}: ProjectProps ) => {
+const Project = ({project, className, id}: ProjectProps ) => {
     return (
-        <div className={className + " projectContainer"}>
+        <div id={id} className={className + "sectionBox projectContainer"}>
             <div className="project">
                 <div>
-                    <Link to={"/" + name.toLowerCase()}>
-                        <h1>{name}</h1>
+                    <Link className="noAFormatting" to={"/project/" + project.name.toLowerCase()}>
+                        <h1>{project.name}</h1>
                     </Link>
-                    <p>{description}</p>
+                    <p>{project.description}</p>
+
+                    <Link className="readMore" to={"/project/" + project.name.toLowerCase()}>
+                        <p>Read More</p>
+                        <img src="images/icons/right.svg"></img>
+                    </Link>
+
 
                     <nav>
-                        <a href={githubLink} target="_blank" rel="noreferrer">
+                        <a href={project.githubLink}>
                             Github repo
                         </a>
-                        <a href={websiteLink} target="_blank" rel="noreferrer">
+                        <a href={project.websiteLink}>
                             Website
                         </a>
                     </nav>
                 </div>
 
                 <div>
-                    {images.map((image, index) => (
-                        <img key={index} src={image} alt={name + " iamge"} />
+                    {project.images.map((image, index) => (
+                        <img key={index} src={image} alt={project.name + " iamge"} />
                     ))}
                 </div>
 

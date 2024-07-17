@@ -12,11 +12,11 @@
     height: 100vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    margin-inline: auto;
 }
 
 .firstPage>div {
-    background-color: #3b3b3bcc;
-
+    background-color: var(--glassColor);
     background-size: 17rem;
     background-repeat: no-repeat;
 
@@ -26,7 +26,6 @@
 
     box-sizing: border-box;
     height: 100%;
-    width: max-content;
     flex-grow: 1;
 }
 

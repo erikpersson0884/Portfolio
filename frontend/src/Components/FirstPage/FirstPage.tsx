@@ -11,8 +11,6 @@ const FirstPage = ({className}: {className: string}) => {
     return (
         <div className={className + " firstPage"}>
 
-            {/* <div className="firstPageContainer"> */}
-
                 <div className='headerTextContainer'>
                     <h1>
                         Welcome, my name is <span className='name'>Erik Persson</span>
@@ -25,8 +23,10 @@ const FirstPage = ({className}: {className: string}) => {
 
                 <div className='headerProjectsContainer'>
                     <nav className='projects'>
-                        <h2>Projects</h2>
-                        {/* <line  className='projectsLine'></line> */}
+                        <a className='noAFormatting' href='#projects'>
+                            <h2>Projects</h2>
+                        </a>
+                        
                         <ul className='noUlFormatting navList'>
                             {data.projects.map((project, index) => {
                                 return (
@@ -37,15 +37,12 @@ const FirstPage = ({className}: {className: string}) => {
                                             {project.icon}
                                             </span>
                                         }
-                                        <a href={project.name}>{project.name}</a>
+                                        <a href={"#" + project.name}>{project.name}</a>
                                     </li>
                                 );
                             })}
                         </ul>
                     </nav> 
-                    
-                {/* </div> */}
-
             </div>
         </div>
     );

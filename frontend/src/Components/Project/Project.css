@@ -11,7 +11,7 @@
 }
 
 .projectContainer .project {
-    background: #0a0a0ac4;
+    background-color: var(--glassColor);
 
     font-family: "Actor", sans-serif;
     font-weight: 400;
@@ -46,6 +46,20 @@
 
 .project h1 {
     font-size: 4.4rem;
+}
+
+.project .readMore {
+    color: var(--textColor);
+
+    text-decoration: none;
+    text-wrap: nowrap;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .4rem; 
+
+    width: max-content;
 }
 
 .project nav {

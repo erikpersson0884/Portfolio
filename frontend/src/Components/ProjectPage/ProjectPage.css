@@ -1,0 +1,119 @@
+
+
+.projectPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding: 5rem 0;
+}
+
+.projectPage section {
+    background-color: var(--glassColor);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 80%;
+    padding: 3rem;
+    padding-bottom: 5rem;
+}
+
+.projectPage h2 {
+    text-align: center;
+}
+
+.progessbar {
+    background-color: #000;
+
+    overflow: hidden;
+
+    width: 80%;
+    height: .4rem;
+    border-radius: 1rem;
+    margin-inline: auto;
+}
+
+.progessbar>div {
+    background: green;
+    
+    height: 100%;
+}
+
+
+/* ----- SECTION SPECIFIC STYLES ----- */
+
+
+.firstView>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .4rem;
+
+    width: max-content;
+}
+
+.firstView>div a {
+    height: 2.5rem;
+    width: min-content;
+}
+
+.firstView>div img {
+    width: 2.5rem;
+    margin-top: .35rem;
+}
+
+.projectPage img {
+    width: 60%;
+    margin-inline: auto;
+}
+
+.programmingLanguages {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.programmingLanguages li {
+    background: #dad9d9;
+    color: #000;
+
+    text-align: center;
+
+    width: 10%;
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+.seeLiveButtons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+    gap: 1rem;
+}
+
+.seeLiveButtons a {
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.seeLiveButtons a:hover {
+    text-decoration: underline;
+    scale: 1.02;
+}
+
+.seeLiveButtons a:first-child {
+    background: #dad9d9;
+    color: #000;
+}
+
+.seeLiveButtons a:last-child {
+    background: inherit;
+    color: #fff;
+
+    
+    outline: green 1px solid;
+}

@@ -5,7 +5,9 @@
 }
 
 :root {
-    --contrastColor: #1b4121;
+    --textColor: #ffffff;
+    --glassColor: #0a0a0ac4;
+    --headerGlassColor: #00000092;
 }
 
 * {
@@ -17,7 +19,7 @@
 
 
 body {
-    background: url("images/snow.jpg") no-repeat center center fixed;
+    background: url("/images/snow.jpg") no-repeat center center fixed;
 
     font-size: 18px;
     
@@ -43,6 +45,11 @@ h3 {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.noAFormatting {
+    color: var(--textColor);
+    text-decoration: none;
 }
 
 .noButtonFormatting {

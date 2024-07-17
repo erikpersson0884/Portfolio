@@ -1,8 +1,7 @@
-header {
-    background: #00000041;
-    /* background: #242424; */
-    /* border-bottom: .2rem solid #c9c9c9; */
-    
+.pageHeader {
+    background: var(--headerGlassColor);
+    /* background: linear-gradient(to right, rgba(95, 2, 13, 0.155), rgb(95, 2, 13)); */
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,11 +18,11 @@ header {
     transition: all 0.5s ease-out;
 }
 
-header .websiteLogo     {
+.pageHeader .websiteLogo     {
     height: 5rem;
 }
 
-header .pageNavigation {
+.pageHeader .pageNavigation {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -34,14 +33,20 @@ header .pageNavigation {
     flex-grow: 4;
 }
 
-header ul img {
+.pageHeader ul img {
     height: 3rem;
 }
 
-header a {
-    color: #fff;
+.pageHeader a {
+    color: var(--textColor);
 
     text-decoration: none;
     /* font-size: 1.4rem; */
     /* text-transform: uppercase; */
 }
+/* 
+.pageHeader a:hover::after {
+    content: url(images/icons/download.svg);
+    align-items: center;
+    align-self: center;
+} */
