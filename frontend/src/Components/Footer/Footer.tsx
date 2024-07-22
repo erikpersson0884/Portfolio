@@ -5,7 +5,7 @@ import info from '../../info.json';
 
 const Footer: React.FC = () => {
     return (
-        <footer>
+        <footer className='pageFooter'>
             <div className="footerLogos invisible">
                 {
                     info.socials.map((social, index) => (

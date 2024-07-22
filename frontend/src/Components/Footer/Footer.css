@@ -1,25 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
 
 
-footer {
+.pageFooter {
     background: #454545;
 
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 
     position: relative;
     bottom: 0;
 
     box-sizing: border-box;
-    padding-inline: 4rem;
-    height: 10rem;
+    height: max-content;
     width: 100%;
+    
+    
+    padding: 3rem 4rem;
+
 }
 
 
-footer a {
+.pageFooter a {
     color: #d8dad8;
     
     font-family: Kavivanar;
@@ -37,4 +41,16 @@ footer a {
 
 .footerLogos img {
     width: 3rem;
+}
+
+
+@media screen and (max-width: 660px) {
+    .pageFooter {
+        flex-direction: column;
+    }
+
+    .pageFooter>.footerLogos:first-child { /* remove the invisible logos to not fuck with the layout */
+        display: none;
+    }
+    
 }

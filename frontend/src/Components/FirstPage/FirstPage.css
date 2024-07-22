@@ -97,3 +97,14 @@
     transition: all .2s ease-in-out; 
 
 }
+
+@media screen and (max-width: 1100px) {
+    .firstPage {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .firstPage>div {
+        width: 100%;
+    }
+}
