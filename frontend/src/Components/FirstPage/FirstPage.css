@@ -36,7 +36,7 @@
 
     justify-content: space-between;
 
-    padding: 6rem;
+    padding: 6rem 2rem 0 6rem;
 }
 
 .headerProjectsContainer {
@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
 
-    padding: 6rem;
+    padding: 0 6rem 6rem 2rem;
     padding-top: 10rem;
 }
 
@@ -58,10 +58,13 @@
 
 .firstPage .name {
     color: rgb(15, 203, 15);
+
+    white-space: nowrap;
 }
 
 .firstPage img {
     width: 25rem;
+    max-width: 100%;
 }
 
 .firstPage .projectsLine {
