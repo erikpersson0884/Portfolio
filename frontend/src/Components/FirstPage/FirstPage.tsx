@@ -1,48 +1,47 @@
 
 import React, { useEffect, useState } from 'react';
 import './FirstPage.css';
-import data from '../../info.json';
+import info from '../../info.json';
 
 
 
-const FirstPage = ({className}: {className: string}) => {
+const FirstPage = () => {
 
 
     return (
-        <div className={className + " firstPage"}>
+        <div className='firstPage'>
+            <div className='headerTextContainer'>
+                <h1>
+                    Welcome, my name is <a href={info.socials[0].url} className='name noAFormatting'>Erik Persson</a>
+                    <br />
+                    and I am a <span className='name'>Web developer</span>
+                </h1>
+                
+                <img src="images/erikpersson.jpg" alt="Erik Persson" />
+            </div>
 
-                <div className='headerTextContainer'>
-                    <h1>
-                        Welcome, my name is <span className='name'>Erik Persson</span>
-                        <br />
-                        and I am a <span className='name'>Web developer</span>
-                    </h1>
+            <div className='headerProjectsContainer'>
+                <nav className='projects'>
+                    <a className='noAFormatting' href='#projects'>
+                        <h2>Projects</h2>
+                    </a>
                     
-                    <img src="images/erikpersson.jpg" alt="Erik Persson" />
-                </div>
-
-                <div className='headerProjectsContainer'>
-                    <nav className='projects'>
-                        <a className='noAFormatting' href='#projects'>
-                            <h2>Projects</h2>
-                        </a>
-                        
-                        <ul className='noUlFormatting navList'>
-                            {data.projects.map((project, index) => {
-                                return (
-                                    <li key={index}>
-                                        {
-                                            project.icon && 
-                                            <span className="material-symbols-outlined">
-                                            {project.icon}
-                                            </span>
-                                        }
-                                        <a href={"#" + project.name}>{project.name}</a>
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    </nav> 
+                    <ul className='noUlFormatting navList'>
+                        {info.projects.map((project, index) => {
+                            return (
+                                <li className="noAFormatting" key={index}>
+                                    {
+                                        project.icon && 
+                                        <span className="material-symbols-outlined">
+                                        {project.icon}
+                                        </span>
+                                    }
+                                    <a href={"#" + project.name}>{project.name}</a>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </nav> 
             </div>
         </div>
     );

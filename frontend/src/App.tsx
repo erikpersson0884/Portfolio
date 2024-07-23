@@ -29,11 +29,11 @@ function App() {
                 <Routes>
                     <Route path="/" element= {
                         <article>
-                            <FirstPage className="section" />
+                            <FirstPage />
 
                             <section id="projects">
                                 {info.projects.map((project, index) => (
-                                    <Project className="section" id={project.name} key={index} project={project} />
+                                    <Project id={project.name} key={index} project={project} />
                                 ))}
                             </section>
 

@@ -50,8 +50,6 @@
     padding-top: 10rem;
 }
 
-
-
 .firstPage h1, .firstPage h2 {
     font-family: "Jockey One", sans-serif;
     font-weight: 400;
@@ -80,23 +78,27 @@
     gap: .6rem;
 }
 
+.navList:hover a {
+    color: rgb(138, 138, 138);
+}
+
 .navList a {
+    transition: all .2s ease-in-out; 
+}
+
+.navList a:hover {
     color: #fff;
-    text-decoration: none;
-}
 
-.navList li {
-    transition: all .2s ease-in-out; 
-}
-.navList li:hover {
-    /* border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff; */
-
-    transform: scale(1.2);
+    cursor: pointer;
+    
+    /* text-decoration: underline; */
 
     transition: all .2s ease-in-out; 
-
 }
+
+/* .navList a:hover::before {
+    content: "->";
+} */
 
 @media screen and (max-width: 1100px) {
     .firstPage {
