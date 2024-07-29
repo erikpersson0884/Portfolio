@@ -12,7 +12,7 @@ interface ProjectProps {
 
 const Project = ({project, className, id}: ProjectProps ) => {
     return (
-            <div className="project">
+            <div className="project" id={id}>
 
                 <div>
                     <Link className="noAFormatting" to={"/project/" + project.name.toLowerCase()}>
