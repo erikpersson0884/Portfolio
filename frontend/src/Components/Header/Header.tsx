@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
-    useEffect(() => {
-        const handleScroll = () => {
-            const header = document.getElementById('pageHeader') as HTMLElement;
-            const headerHeight = header.offsetHeight;
-            const heightToShowHeader = 100;
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const header = document.getElementById('pageHeader') as HTMLElement;
+    //         const headerHeight = header.offsetHeight;
+    //         const heightToShowHeader = 100;
 
-            if (window.scrollY >= heightToShowHeader) {
-                header.style.top = '0'; // Show the header
-            } else {
-                header.style.top = `-${headerHeight}px`; // Hide the header
-            }
-        };
+    //         if (window.scrollY >= heightToShowHeader) {
+    //             header.style.top = '0'; // Show the header
+    //         } else {
+    //             header.style.top = `-${headerHeight}px`; // Hide the header
+    //         }
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    });
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    // });
 
 
     return (

@@ -1,6 +1,6 @@
 .pageHeader {
     background: var(--headerGlassColor);
-    /* background: linear-gradient(to right, rgba(95, 2, 13, 0.155), rgb(95, 2, 13)); */
+    background: url("/images/snow.jpg") no-repeat center center fixed;
 
     display: flex;
     flex-direction: row;
@@ -8,8 +8,9 @@
     align-items: center;
 
     position: fixed;
-    top: -8rem;
+    /* top: -8rem; */
     left: 0;
+    z-index: 100;
 
     box-sizing: border-box;
     width: 100%;
