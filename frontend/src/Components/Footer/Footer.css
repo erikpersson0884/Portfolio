@@ -2,7 +2,7 @@
 
 
 .pageFooter {
-    background: #454545;
+    background: var(--footerColor);
 
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
 }
 
 .footerEmail {
-    color: #d8dad8;
+    color: var(--offWhite);
 
     text-align: center;
     font-family: Kavivanar;
@@ -33,7 +33,7 @@
 }
 
 .footerEmail:hover {
-    color: #fff;
+    color: var(--textColor);
 
     transition: all .3s ease;
 }
@@ -44,7 +44,7 @@
     width: 0;
     height: 2px;
     background: var(--contrastColor);
-    transition: width .5s;
+    transition: all .5s ease;
 }
 
 .footerEmail:hover::after {
@@ -89,7 +89,7 @@
 }
 
 .footerLogos svg {
-    fill: #d8dad8;
+    fill: var(--offWhite);
 }
 
 .footerLogos a:hover svg {

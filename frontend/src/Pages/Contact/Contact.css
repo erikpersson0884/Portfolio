@@ -3,7 +3,7 @@
 }
 
 .contactPage {
-    background: #353535ec;
+    background: var(--glassColor);
 
     display: flex;
     flex-direction: column;
@@ -14,11 +14,10 @@
 
     margin-top:35vh;
     margin-left: 10vw;
-    /* margin-left: 15vw; */
 }
 
 .contactPage line {
-    background: #fff;
+    background: var(--textColor);
 }
 
 .contactInformation {
@@ -39,8 +38,6 @@
 .contactInformation img {
     height: 1.5rem;
 }
-
-
 
 .contactHeader {
     top: 0;

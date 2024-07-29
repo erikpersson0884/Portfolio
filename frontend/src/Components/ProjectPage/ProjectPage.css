@@ -25,7 +25,7 @@
 }
 
 .progessbar {
-    background-color: #000;
+    background-color: var(--progressbarColor);
 
     overflow: hidden;
 
@@ -88,8 +88,8 @@
 }
 
 .programmingLanguages li {
-    background: #dad9d9;
-    color: #000;
+    background: var(--offWhite);
+    color: var(--darkTextColor);
 
     text-align: center;
 
@@ -120,13 +120,13 @@
 }
 
 .seeLiveButtons a:first-child {
-    background: #dad9d9;
-    color: #000;
+    background: var(--offWhite);
+    color: var(--darkTextColor);
 }
 
 .seeLiveButtons a:last-child {
     background: inherit;
-    color: #fff;
+    color: var(--textColor);
     
     outline: var(--contrastColor) 1px solid;
 }

@@ -9,9 +9,15 @@
 
 :root {
     --textColor: #ffffff;
+    --offWhite: #d8dad8;
     --glassColor: #0a0a0ac4;
     --headerGlassColor: #00000092;
     --contrastColor: #008000;
+    --footerColor: #454545;
+    --projectLinkColor: #cbebff;
+
+    --progressbarColor: #000;
+    --darkTextColor: #000;
 }
 
 * {

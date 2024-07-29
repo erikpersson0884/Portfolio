@@ -84,7 +84,7 @@
 }
 
 .navList a:hover {
-    color: #fff;
+    color: var(--textColor);
 
     cursor: pointer;
     

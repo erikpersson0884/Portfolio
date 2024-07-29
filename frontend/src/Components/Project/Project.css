@@ -113,17 +113,15 @@
     margin-top: 2rem;
 }
 
-.project nav a {
-    --linkColor: #cbebff;
-    
-    color: var(--linkColor);
+.project nav a {    
+    color: var(--projectLinkColor);
     text-decoration: none;
     white-space: nowrap;
 }
 
 .readMore img {
     transform: rotate(0deg);
-    transition: transform .5s;
+    transition: transform .5s ease;
 }
 
 .readMore:hover img {
@@ -136,7 +134,7 @@
     width: 0;
     height: 2px;
     background: var(--contrastColor);
-    transition: width .5s;
+    transition: width .5s ease;
 }
 
 .project nav a:hover::after {

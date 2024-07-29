@@ -3,6 +3,6 @@
 @media print {
 
     body {
-        color: #000;
+        color: var(--darkTextColor);
     }
 }
