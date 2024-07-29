@@ -124,11 +124,23 @@
     border-radius: .2rem;
 }
 
+.mobileImage {
+    display: none;
+}
+
 
 @media screen and (max-width: 450px) {
     #projects .project {
         width: 100%;
         border-radius: 0;
         padding: 1rem;
+    }
+
+    #projects .projectImages {
+        display: none !important;
+    }
+
+    #projects .mobileImage {
+        display: block;
     }
 }

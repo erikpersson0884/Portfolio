@@ -19,6 +19,8 @@ const Project = ({project, className, id}: ProjectProps ) => {
                         <h2>{project.name}</h2>
                     </Link>
 
+                    <img className="mobileImage" src={project.images[0]} alt={project.name + " image"} />
+
                     <p>{project.description}</p>
 
                     <nav>
@@ -38,9 +40,9 @@ const Project = ({project, className, id}: ProjectProps ) => {
 
                 </div>
 
-                <div>
+                <div className="projectImages">
                     {project.images.map((image, index) => (
-                        <img key={index} src={image} alt={project.name + " iamge"} />
+                        <img key={index} src={image} alt={project.name + " image"} />
                     ))}
                 </div>
             </div>
