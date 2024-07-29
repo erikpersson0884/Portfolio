@@ -31,9 +31,9 @@ const Project = ({project, className, id}: ProjectProps ) => {
                             Website
                         </a>
 
-                        <Link className="readMore" to={"/project/" + project.name.toLowerCase()}>
+                        <Link className="readMore" to={"/project/" + project.name.toLowerCase()}    >
                             <p>Read More</p>
-                            <img src="images/icons/right.svg"></img>
+                            <img src="images/icons/right.svg" alt="Right arrow" />
                         </Link>
 
                     </nav>

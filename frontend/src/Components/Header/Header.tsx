@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <header id="pageHeader" className='pageHeader'>
             <Link to="/">
-                <img className="websiteLogo" src="/images/erikpersson-logo.png" alt="Erik Persson Logo" />
+                <img className="websiteLogo" src="/images/erikpersson-logo.png" alt="Erik Persson Logo" width="10"/>
             </Link>
 
             <nav className="pageNavigation">
