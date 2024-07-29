@@ -43,7 +43,6 @@ function App() {
 
                     }></Route>
 
-
                     {info.projects.map((project, index) => (
                         <Route key={index} path={`/project/${project.name.toLowerCase()}`} element={<ProjectPage project={project} />} />
                     ))}
