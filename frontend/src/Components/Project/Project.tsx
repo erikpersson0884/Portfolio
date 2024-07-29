@@ -12,7 +12,6 @@ interface ProjectProps {
 
 const Project = ({project, className, id}: ProjectProps ) => {
     return (
-        <div id={id} className={className + "sectionBox projectContainer"}>
             <div className="project">
 
                 <div>
@@ -45,7 +44,6 @@ const Project = ({project, className, id}: ProjectProps ) => {
                     ))}
                 </div>
             </div>
-        </div>
     );
 };
 
