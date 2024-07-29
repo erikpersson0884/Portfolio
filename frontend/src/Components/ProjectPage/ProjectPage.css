@@ -1,5 +1,4 @@
 
-
 .projectPage {
     display: flex;
     flex-direction: column;
@@ -36,40 +35,51 @@
     margin-inline: auto;
 }
 
-.progessbar>div {
-    background: green;
+.progessbar>.progressIndicator {
+    background: var(--contrastColor);
     
     height: 100%;
 }
 
 
-/* ----- SECTION SPECIFIC STYLES ----- */
+/* ----- FIRSTVIEW SPECIFIC STYLES ----- */
 
-
-.firstView>div {
+.projectMenu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: .4rem;
+    gap: 2rem;
 
     width: max-content;
 }
 
-.firstView>div a {
+.projectMenu a {
     height: 2.5rem;
     width: min-content;
 }
 
-.firstView>div img {
+.projectMenu img {
     width: 2.5rem;
     margin-top: .35rem;
 }
 
-.projectPage img {
+.projectImage {
     width: 60%;
     margin-inline: auto;
 }
+
+.projectShortDescription {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6rem;
+
+    box-sizing: border-box;
+    padding-inline: 7rem;
+}
+
+/* ----- PROGRAMMING LANGUAGES SPECIFIC STYLES ----- */
+
 
 .programmingLanguages {
     display: flex;
@@ -88,11 +98,15 @@
     border-radius: .3rem;
 }
 
+/* ----- SEE-LIVE SPECIFIC STYLES ----- */
+
 .seeLiveButtons {
     display: flex;
     justify-content: flex-start;
-    gap: 4rem;
     gap: 1rem;
+
+    width: 80%;
+    margin-inline: auto;
 }
 
 .seeLiveButtons a {
@@ -113,7 +127,6 @@
 .seeLiveButtons a:last-child {
     background: inherit;
     color: #fff;
-
     
-    outline: green 1px solid;
+    outline: var(--contrastColor) 1px solid;
 }

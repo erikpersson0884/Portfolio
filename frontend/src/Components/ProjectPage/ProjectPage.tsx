@@ -12,15 +12,16 @@ const ProjectPage = ({project}: { project: Project }) =>  {
     return (
         <article className="projectPage">
             <section className="firstView">
-                <div>
+                <div className="projectMenu">
                     <Link to="/">
-                        <img src="/images/icons/back.svg" alt="back" />
+                        <img src="/images/icons/back.svg" width="10" alt="back" />
                     </Link>
                     <h1>{project.name}</h1>
                 </div>
 
-                <img src={project.images[0]} alt="project image"/>
-                <p>{project.shortDescription}</p>
+                <img className="projectImage" src={project.images[0]} alt="project image"/>
+
+                <p className="projectShortDescription">"{project.shortDescription}"</p>
             </section>
 
             <section>

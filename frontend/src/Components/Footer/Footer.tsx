@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
 
             <nav className="footerLogos">
                 {info.socials.map((social, index) => (
-                        <a href={social.url} key={1433}>
+                        <a href={social.url} key={index}>
                             <svg>
                                 <path d={social.path}></path>
                             </svg>
