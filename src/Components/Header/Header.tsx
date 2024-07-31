@@ -2,7 +2,7 @@ import React, { useEffect, CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-const Header = () => {
+const Header: React.FC = () => {
     // useEffect(() => {
     //     const handleScroll = () => {
     //         const header = document.getElementById('pageHeader') as HTMLElement;
@@ -24,7 +24,8 @@ const Header = () => {
     return (
         <header id="pageHeader" className='pageHeader'>
             <Link to="/">
-                <img className="websiteLogo" src="/images/erikpersson-logo.png" alt="Erik Persson Logo" width="10"/>
+                <img className="websiteLogo" src="images/erikpersson-logo.png" alt="Erik Persson Logo" width="10"/>
+
             </Link>
 
             <nav className="pageNavigation">

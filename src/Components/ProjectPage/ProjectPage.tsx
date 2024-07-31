@@ -14,7 +14,7 @@ const ProjectPage = ({project}: { project: Project }) =>  {
             <section className="firstView">
                 <div className="projectMenu">
                     <Link to="/">
-                        <img src="/images/icons/back.svg" width="10" alt="back" />
+                        <img src="images/icons/back.svg" width="10" alt="back" />
                     </Link>
                     <h1>{project.name}</h1>
                 </div>

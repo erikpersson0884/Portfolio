@@ -27,7 +27,7 @@
 }
 
 .headerTextContainer {
-    background-image: url("images/upper-frame.svg");
+    background-image: url("/images/upper-frame.svg");
     background-position: top left;
 
     display: flex;
@@ -39,7 +39,7 @@
 }
 
 .headerProjectsContainer {
-    background-image: url("images/lower-frame.svg");
+    background-image: url("/images/lower-frame.svg");
     background-position: bottom right;
 
     display: flex;
