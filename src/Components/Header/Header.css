@@ -45,15 +45,40 @@
 }
 
 
-
+.openPageNavigationButton {
+    display: none;
+}
 
 @media screen and (max-width: 450px) {
-    .pageHeader {
-        padding-inline: 0;
+    .pageHeader .pageNavigation a {
+        display: none;
+    }
+.pageHeader:hover
+     {
+        align-items: flex-start;
+
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    }
+
+    .pageHeader:hover .pageNavigation {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .pageHeader:hover .pageNavigation>a {
+        display: block;
     }
 
     .pageHeader .pageNavigation {
+        display: flex;
+    }
+
+    .openPageNavigationButton {
+        display: block;
+    }
+
+    .pageHeader:hover .openPageNavigationButton {
         display: none;
     }
-    
 }

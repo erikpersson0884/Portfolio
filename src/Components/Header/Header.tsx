@@ -25,14 +25,18 @@ const Header: React.FC = () => {
         <header id="pageHeader" className='pageHeader'>
             <Link to="/">
                 <img className="websiteLogo" src="images/erikpersson-logo.png" alt="Erik Persson Logo" width="10"/>
-
             </Link>
 
             <nav className="pageNavigation">
                 <a className='hoverUnderSlide' href="#projects">Projects</a>
                 <a className='hoverUnderSlide' href="files/cv.pdf">CV</a>
                 <Link className='hoverUnderSlide' to="/contact">Contact me</Link>
+
+                <button className="openPageNavigationButton noButtonFormatting">
+                    <img src="images/icons/hamburgerMenu.svg" alt="open page navigation" />
+                </button>
             </nav>
+
         </header>
     );
 };
