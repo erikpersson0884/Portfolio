@@ -90,6 +90,19 @@ line {
     margin-inline: auto;
 }
 
+.hoverUnderSlide::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--contrastColor);
+    transition: width .5s ease;
+}
+
+.hoverUnderSlide:hover::after {
+    width: 100%;
+}
+
 .mainContent {
     margin-top: 6rem;
 }

@@ -29,9 +29,9 @@ const Header: React.FC = () => {
             </Link>
 
             <nav className="pageNavigation">
-                <a href="#projects">Projects</a>
-                <a href="files/cv.pdf">CV</a>
-                <Link to="/contact">Contact me</Link>
+                <a className='hoverUnderSlide' href="#projects">Projects</a>
+                <a className='hoverUnderSlide' href="files/cv.pdf">CV</a>
+                <Link className='hoverUnderSlide' to="/contact">Contact me</Link>
             </nav>
         </header>
     );

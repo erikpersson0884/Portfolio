@@ -24,10 +24,10 @@ const Project = ({project, className, id}: ProjectProps ) => {
                     <p>{project.description}</p>
 
                     <nav>
-                        <a href={project.githubLink}>
+                        <a className="hoverUnderSlide" href={project.githubLink}>
                             Github repo
                         </a>
-                        <a href={project.websiteLink}>
+                        <a className="hoverUnderSlide" href={project.websiteLink}>
                             Website
                         </a>
 

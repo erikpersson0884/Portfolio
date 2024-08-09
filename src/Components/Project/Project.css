@@ -23,10 +23,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap-reverse; */
 
     box-sizing: border-box;
     width: 70%;
+    min-height: 70vh;
     padding: 2rem;
     padding-bottom: 5rem;
     border-radius: .6rem;
@@ -134,19 +134,6 @@
 
 .readMore:hover img {
     transform:perspective(1000px) rotateX(180deg);
-}
-
-.project nav a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: var(--contrastColor);
-    transition: width .5s ease;
-}
-
-.project nav a:hover::after {
-    width: 100%;
 }
 
 
