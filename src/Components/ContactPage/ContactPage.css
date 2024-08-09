@@ -11,6 +11,8 @@
 .contactPage {
     background: var(--glassColor);
 
+    text-wrap: nowrap;
+
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -18,7 +20,6 @@
     box-sizing: border-box;
     width: max-content;
     padding: 1rem 10rem 2rem 3rem;
-    margin-left: 10vw;
 }
 
 .contactPage line {
@@ -50,6 +51,10 @@
 
 .contactHeader img {
     height: 3rem;
+}
+
+.contactLogos {
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 650px) {

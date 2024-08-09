@@ -1,0 +1,53 @@
+
+.socialLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    width: max-content;
+}
+
+.socialLogos img {
+    width: 3rem;
+}
+
+.socialLogos a {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+
+    transition: all .3s ease;
+}
+
+.socialLogos a:hover {
+    background-color: inherit;
+
+    box-shadow: 0 0 10px 10px var(--contrastColor);
+}
+
+.socialLogos svg {
+    width: 100%;
+    height: 100%;
+}
+
+.socialLogos svg {
+    fill: var(--offWhite);
+}
+
+.socialLogos a:hover svg {
+    fill: var(--contrastColor);
+}
+
+.socialLogos a, .socialLogos svg {
+    transition: all .3s ease;
+}
+
+
+@media screen and (max-width: 825px) {
+    .socialLogos {
+        position: relative;
+        right: 0;
+    }
+}
