@@ -4,7 +4,6 @@ import './Footer.css';
 import info from '../../info.json';
 
 const Footer: React.FC = () => {
-    const social = info.socials[0]
 
     return (
         <footer className='pageFooter'>

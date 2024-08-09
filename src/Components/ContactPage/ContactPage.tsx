@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Contact.css';
+import './ContactPage.css';
 
 import info from '../../info.json'
 import { Link } from 'react-router-dom';
