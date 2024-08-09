@@ -38,7 +38,7 @@ function App() {
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </article>
-                {/* <Footer /> */}
+                <Footer />
             </BrowserRouter>
         </>
     );
