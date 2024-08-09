@@ -25,7 +25,7 @@ const FirstPage = () => {
                     <a className='noAFormatting' href='#projects'>
                         <h2>Projects</h2>
                     </a>
-                    
+                    <hr style={{ background: '#fff'}} />
                     <ul className='noUlFormatting navList'>
                         {info.projects.map((project, index) => {
                             return (
