@@ -1,23 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Erik Persson Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="images/erikpersson-logo.png" />
+    <head>
+        <title>Erik Persson Portfolio</title>
+        <link rel="icon" type="image/svg+xml" href="images/erikpersson-logo.png" />
+        <link rel="icon" type="image/x-icon" href="pwa/favicon.ico">
 
-    <base href="/Portfolio/" />
+        <base href="/Portfolio/" />
 
+        <meta charset="UTF-8" />
+        <meta name="description" content="Erik Persson Portfolio" />
+        <meta name="keywords" content="Erik Persson, Portfolio, Web Developer" />
+        <meta name="author" content="Erik Persson" />
 
-    <meta charset="UTF-8" />
-    <meta name="description" content="Erik Persson Portfolio" />
-    <meta name="keywords" content="Erik Persson, Portfolio, Web Developer" />
-    <meta name="author" content="Erik Persson" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-  </head>
-  <body>
+        <link rel="mainifest" href="/pwa/manifest.json" />
 
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <script type="module" src="/src/main.tsx" defer></script>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
 </html>
