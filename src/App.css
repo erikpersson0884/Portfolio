@@ -89,3 +89,7 @@ line {
     height: .1rem;
     margin-inline: auto;
 }
+
+.mainContent {
+    margin-top: 6rem;
+}

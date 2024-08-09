@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 3rem;
-    padding: 5rem 0;
+    padding-bottom: 5rem;
 }
 
 .projectPage section {

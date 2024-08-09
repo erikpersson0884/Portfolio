@@ -15,28 +15,30 @@ function App() {
     return (
         <>
             <BrowserRouter basename='/Portfolio/'>
-                <ScrollToTop />
                 <Header />
 
-                <Routes>
-                    <Route path="/" element={
-                        <article>
-                            <FirstPage />
-                            <section id="projects">
-                                {info.projects.map((project, index) => (
-                                    <Project id={project.name} key={index} project={project} />
-                                ))}
-                            </section>
-                            <Footer />
-                        </article>
-                    }></Route>
+                <ScrollToTop />
+                <article className='mainContent'>
+                    <Routes>
+                        <Route path="/" element={
+                            <>
+                                <FirstPage />
+                                <section id="projects">
+                                    {info.projects.map((project, index) => (
+                                        <Project id={project.name} key={index} project={project} />
+                                    ))}
+                                </section>
+                            </>
+                        }></Route>
 
-                    {info.projects.map((project, index) => (
-                        <Route key={index} path={`/project/${project.name.toLowerCase()}`} element={<ProjectPage project={project} />} />
-                    ))}
+                        {info.projects.map((project, index) => (
+                            <Route key={index} path={`/project/${project.name.toLowerCase()}`} element={<ProjectPage project={project} />} />
+                        ))}
 
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </article>
+                {/* <Footer /> */}
             </BrowserRouter>
         </>
     );

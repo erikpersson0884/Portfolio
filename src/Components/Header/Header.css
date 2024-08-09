@@ -1,3 +1,4 @@
+
 .pageHeader {
     background: var(--headerGlassColor);
     background: url("/images/snow.jpg") no-repeat center center fixed;
@@ -8,7 +9,6 @@
     align-items: center;
 
     position: fixed;
-    /* top: -8rem; */
     left: 0;
     z-index: 100;
 
