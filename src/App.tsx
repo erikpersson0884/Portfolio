@@ -13,7 +13,7 @@ import info from './info.json';
 
 function App() {
     return (
-        <BrowserRouter basename='/Portfolio/'>
+        <BrowserRouter >
             <Header />
             <ScrollToTop />
             <article className='mainContent'>

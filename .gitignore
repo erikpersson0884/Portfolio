@@ -1,5 +1,7 @@
 test/
 
+NOTES.md
+
 # Logs
 logs/
 *.log

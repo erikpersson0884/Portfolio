@@ -84,6 +84,7 @@
 .programmingLanguages {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 3rem;
 }
 
@@ -93,7 +94,7 @@
 
     text-align: center;
 
-    width: 10%;
+    width: 6rem;
     padding: 1rem;
     border-radius: .3rem;
 }
@@ -101,8 +102,11 @@
 /* ----- SEE-LIVE SPECIFIC STYLES ----- */
 
 .seeLiveButtons {
+    text-wrap: nowrap;
+
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 1rem;
 
     width: 80%;
